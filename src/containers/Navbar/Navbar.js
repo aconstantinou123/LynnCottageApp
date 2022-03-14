@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <MDBNavbar expand='lg' light bgColor='white' fixed>
+      <MDBNavbar expand='lg' light fixed='top'>
         <MDBContainer fluid>
           <MDBNavbarToggler
             onClick={toggleOpen}
@@ -34,31 +34,31 @@ const Navbar = () => {
           <MDBCollapse id="navbarCollapse" show={isOpen} navbar>
             <MDBNavbarNav right className='mb-2 mb-lg-0'>
               <MDBNavbarItem active>
-                <MDBNavbarLink aria-current='page' href='#'>
+                <MDBNavbarLink className='text-white' aria-current='page' href='#'>
                   Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Features</MDBNavbarLink>
+                <MDBNavbarLink className='text-white' href='#'>Features</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
+                <MDBNavbarLink className='text-white' href='#'>Pricing</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>About</MDBNavbarLink>
+                <MDBNavbarLink className='text-white' href='#'>About</MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
 
-      <div className='p-5 text-center bg-light'>
+      {/* <div className='p-5 text-center bg-light'>
         <h1 className='mb-3'>Heading</h1>
         <h4 className='mb-3'>Subheading</h4>
         <a className='btn btn-primary' href='' role='button'>
           Call to action
         </a>
-      </div>
+      </div> */}
     </header>
   )
 }
