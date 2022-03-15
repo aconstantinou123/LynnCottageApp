@@ -4,7 +4,7 @@ const BackgroundImage = () => (
   <div
     className='bg-image'
     style={{
-      backgroundImage: 'url("assets/living_room_4.jpg")',
+      backgroundImage: 'url("assets/front_house_1.jpg")',
       height: '100vh',
     }}
   >

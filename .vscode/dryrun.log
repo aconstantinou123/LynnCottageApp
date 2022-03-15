@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/alex/projects/node/lynn-cottage-app'
+make: Leaving directory '/home/alex/projects/node/lynn-cottage-app'
+ 
+makefile:4: *** missing separator.  Stop.
+ 
