@@ -33,6 +33,18 @@ const images = [
   },
 ];
 
-const Gallery = () => <ImageGallery items={images} />
+const Gallery = () => (
+  <>
+     <div className='container mt-5 pt-5'>
+      <section id='best-features' className='text-center'>
+        <h2 className='mb-3 font-weight-bold'>Gallery</h2>
+        <i id='description' className='fa-solid fa-camera fa-2xl pb-5 mb-5'></i>
+      </section>
+    </div>
+    <div id='gallery'>
+      <ImageGallery items={images} />
+    </div>
+  </>
+)
 
 export default Gallery

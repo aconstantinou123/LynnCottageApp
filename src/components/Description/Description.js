@@ -1,12 +1,12 @@
 const Description = () => (
-  <main id='description' className='mt-5'>
+  <main className='mt-5 pt-5'>
     <div className='container'>
       <section id='best-features' className='text-center'>
         <h2 className='mb-3 font-weight-bold'>Our Home</h2>
-        <i className='fa-solid fa-house fa-2xl pb-4'></i>
+        <i id='description' className='fa-solid fa-house fa-2xl pb-4'></i>
         <div className='row d-flex justify-content-center mb-4'>
           <div className='col-md-8'>
-            <p className='grey-text'>
+            <p className='grey-text pt-5'>
             Situated in the beautiful village of East Linton, Lynn Cottage is perfectly placed for exploring this fabulous area of coastal Scotland. The 2-bed cottage is 10 minutes’ walk to the village centre and has stunning views from the back garden over Drylaw Hill.
             </p>
             <p className='grey-text'>

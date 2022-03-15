@@ -20,8 +20,8 @@ const Navbar = () => {
   const toggleOpen = () => setIsOpen(!isOpen)
 
   return (
-    <header>
-      <MDBNavbar expand='lg' light fixed='top'>
+    <header id='home'>
+      <MDBNavbar expand='lg' light fixed='top' bgColor='dark'>
         <MDBContainer fluid>
           <MDBNavbarToggler
             onClick={toggleOpen}
@@ -29,23 +29,23 @@ const Navbar = () => {
             aria-expanded='false'
             aria-label='Toggle navigation'
           >
-            <MDBIcon fas icon='bars' />
+            <MDBIcon fas icon='bars' color='white' />
           </MDBNavbarToggler>
           <MDBCollapse id="navbarCollapse" show={isOpen} navbar>
             <MDBNavbarNav right className='mb-2 mb-lg-0'>
               <MDBNavbarItem active>
-                <MDBNavbarLink className='text-white' aria-current='page' href='#'>
+                <MDBNavbarLink className='text-white' aria-current='page' href='#home'>
                   Home
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink className='text-white' href='#'>Features</MDBNavbarLink>
+                <MDBNavbarLink className='text-white' href='#description'>About</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink className='text-white' href='#'>Pricing</MDBNavbarLink>
+                <MDBNavbarLink className='text-white' href='#gallery'>Features</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink className='text-white' href='#'>About</MDBNavbarLink>
+                <MDBNavbarLink className='text-white' href='#contact'>Contact</MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
