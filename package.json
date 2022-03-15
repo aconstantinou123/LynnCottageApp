@@ -3,7 +3,22 @@
   "version": "2.3.0",
   "description": "website for lynn cottage",
   "private": true,
+  "bin": {
+    "lynn-cottage": "bin/lynn-cottage.ts"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.125.0",
+    "@types/node": "10.17.27",
+    "aws-cdk": "^1.148.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
   "dependencies": {
+    "@aws-cdk/aws-cloudfront": "1.125.0",
+    "@aws-cdk/aws-cloudfront-origins": "1.125.0",
+    "@aws-cdk/aws-route53-targets": "1.125.0",
+    "@aws-cdk/aws-s3-deployment": "1.125.0",
+    "@aws-cdk/core": "1.125.0",
     "mdb-react-ui-kit": "^2.3.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -13,6 +28,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "build-stack": "tsc && cdk synthesize -o ./build/cdk.out",
+    "deploy": "cdk deploy --require-approval=never -f -a ./build/cdk.out -o ./build/cdk.out",
+    "remove-stack": "cdk destroy  --require-approval=never -f -a ./build/cdk.out",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
