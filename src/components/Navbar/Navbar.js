@@ -42,7 +42,7 @@ const Navbar = () => {
                 <MDBNavbarLink className='text-white' href='#description'>About</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink className='text-white' href='#gallery'>Features</MDBNavbarLink>
+                <MDBNavbarLink className='text-white' href='#gallery'>Gallery</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink className='text-white' href='#contact'>Contact</MDBNavbarLink>
@@ -51,14 +51,6 @@ const Navbar = () => {
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-
-      {/* <div className='p-5 text-center bg-light'>
-        <h1 className='mb-3'>Heading</h1>
-        <h4 className='mb-3'>Subheading</h4>
-        <a className='btn btn-primary' href='' role='button'>
-          Call to action
-        </a>
-      </div> */}
     </header>
   )
 }

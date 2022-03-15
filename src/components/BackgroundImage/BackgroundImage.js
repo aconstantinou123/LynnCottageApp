@@ -12,8 +12,7 @@ const BackgroundImage = () => (
       <div className='header-text d-flex justify-content-center text-center'>
         <h1 className='text-white mb-3'>Lynn Cottage</h1>
         <h4 className='text-white mb-3'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
-          consequuntur
+          A hideaway amongst the beauty of East Lothian
         </h4>
         <a href='#description' className='btn btn-outline-light btn-lg' role='button'>
           Learn More
