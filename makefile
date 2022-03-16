@@ -9,4 +9,3 @@ sync-s3-assets:
 	cd build && aws s3 sync . s3://wildcard-lynncottage.co.uk
 
 deploy-changes: build-app sync-s3-assets clear-cloudfront-cache
-

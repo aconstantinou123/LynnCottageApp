@@ -1,63 +1,57 @@
 import cdk = require('@aws-cdk/core');
 import { Bucket } from '@aws-cdk/aws-s3';
 import { BucketDeployment, Source } from '@aws-cdk/aws-s3-deployment';
-import * as cloudfront from '@aws-cdk/aws-cloudfront';
-import * as acm from '@aws-cdk/aws-certificatemanager';
-import * as route53 from '@aws-cdk/aws-route53';
-import * as targets from '@aws-cdk/aws-route53-targets';
+import { OriginAccessIdentity, CloudFrontWebDistribution, ViewerCertificate } from '@aws-cdk/aws-cloudfront';
+import { HttpsRedirect } from '@aws-cdk/aws-route53-patterns'
+import { CertificateValidation, DnsValidatedCertificate } from '@aws-cdk/aws-certificatemanager';
+import { ARecord, HostedZone, RecordTarget } from '@aws-cdk/aws-route53';
+import { CloudFrontTarget } from '@aws-cdk/aws-route53-targets';
 
 const websiteDistSourcePath = './build';
 
 export class lynnCottageStack extends cdk.Stack {
   public constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-
-    /*
-      This will pick up deploytime command line context parameters 
-      eg:  cdk deploy -c primaryDomain=exampledomain.com.  If we fail to pass in the value from the 
-      command line use exampledomain.com. 
-    */
  
     const primaryDomain = 'lynncottage.co.uk'
-
-    /*
-      Use the name of a Route53 hosted zone that exists in your account, replace 
-      exampledomain with your Hostedzone
-    */
-    const subDomain = `*.${primaryDomain}`
+    const wwwDomain = `www.${primaryDomain}`
 
     // Create a private S3 bucket
     const sourceBucket = new Bucket(this, 'cdk-mypoc-website-s3', {
       websiteIndexDocument: 'index.html',
-      bucketName: `wildcard-${primaryDomain}`
+      bucketName: primaryDomain,
     });
 
-    // Create access identity, and grant read access only, we will use this identity in CloudFront
-    const originAccessIdentity = new cloudfront.OriginAccessIdentity(this, 'OIA', {
+    // Create access identity, and grant read access only
+    const originAccessIdentity = new OriginAccessIdentity(this, 'OIA', {
       comment: "Setup access from CloudFront to the bucket ( read )"
     });
     sourceBucket.grantRead(originAccessIdentity);
 
-    // Deploy the source code from the /app folder, in this example thats just 1 file.
+    // Deploy the source code from the /app folder
     new BucketDeployment(this, 'DeployWebsite', {
       sources: [Source.asset(websiteDistSourcePath)],
       destinationBucket: sourceBucket
     });
 
-    // We are using a Zone that already exists so we can use a lookup on the Zone name.
-    const zone = route53.HostedZone.fromLookup(this, 'baseZone', {
+    // Using a Zone that already exists so we can use a lookup on the Zone name.
+    const zone = HostedZone.fromLookup(this, 'BaseZone', {
       domainName: primaryDomain
     });
 
-    // Request the wildcard TLS certificate, CDK will take care of domain ownership validation via 
-    // CNAME DNS entries in Route53, a custom resource will be used on our behalf
-    const myCertificate = new acm.DnsValidatedCertificate(this, 'mySiteCert', {
-      domainName: subDomain,
+    // Request the TLS certificate
+    const certificate = new DnsValidatedCertificate(this, 'SiteCert', {
+      domainName: primaryDomain,
       hostedZone: zone,
+      validation: CertificateValidation.fromDns(zone)
     });
 
-    // Create the CloudFront Distribution, set the alternate CNAMEs and pass in the ACM ARN of the cert created.
-    const cfDist = new cloudfront.CloudFrontWebDistribution(this, 'myDist', {
+    const viewerCertificate = ViewerCertificate.fromAcmCertificate(certificate, {
+      aliases: [primaryDomain],
+    });
+
+    // Create the CloudFront Distribution
+    const cfDist = new CloudFrontWebDistribution(this, 'CfDist', {
       originConfigs: [
         {
           s3OriginSource: {
@@ -69,17 +63,20 @@ export class lynnCottageStack extends cdk.Stack {
           ]
         }
       ],
-      aliasConfiguration: {
-        acmCertRef: myCertificate.certificateArn,
-        names: [subDomain],
-      }
+      viewerCertificate,
     });
   
-    // Create the wildcard DNS entry in route53 as an alias to the new CloudFront Distribution.
-    new route53.ARecord(this, 'AliasRecord', {
+    // Create DNS entry in route53 as an alias to the new CloudFront Distribution.
+    new ARecord(this, 'AliasRecord', {
       zone,
-      recordName: subDomain,
-      target: route53.RecordTarget.fromAlias(new targets.CloudFrontTarget(cfDist)),
+      recordName: primaryDomain,
+      target: RecordTarget.fromAlias(new CloudFrontTarget(cfDist)),
+    });
+
+    new HttpsRedirect(this, "Redirect", {
+      zone,
+      recordNames: [wwwDomain],
+      targetDomain: primaryDomain,
     });
   }
 }
