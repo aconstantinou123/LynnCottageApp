@@ -1,4 +1,4 @@
-import cdk = require('@aws-cdk/core');
+import { Stack, App, StackProps } from '@aws-cdk/core';
 import { Bucket } from '@aws-cdk/aws-s3';
 import { BucketDeployment, Source } from '@aws-cdk/aws-s3-deployment';
 import { OriginAccessIdentity, CloudFrontWebDistribution, ViewerCertificate } from '@aws-cdk/aws-cloudfront';
@@ -9,8 +9,8 @@ import { CloudFrontTarget } from '@aws-cdk/aws-route53-targets';
 
 const websiteDistSourcePath = './build';
 
-export class lynnCottageStack extends cdk.Stack {
-  public constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
+export class lynnCottageStack extends Stack {
+  public constructor(scope: App, id: string, props?: StackProps) {
     super(scope, id, props);
  
     const primaryDomain = 'lynncottage.co.uk'
