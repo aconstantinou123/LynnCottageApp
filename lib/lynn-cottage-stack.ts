@@ -24,7 +24,7 @@ export class lynnCottageStack extends Stack {
 
     // Create access identity, and grant read access only
     const originAccessIdentity = new OriginAccessIdentity(this, 'OIA', {
-      comment: "Setup access from CloudFront to the bucket ( read )"
+      comment: 'Setup access from CloudFront to the bucket ( read )'
     });
     sourceBucket.grantRead(originAccessIdentity);
 
@@ -73,7 +73,7 @@ export class lynnCottageStack extends Stack {
       target: RecordTarget.fromAlias(new CloudFrontTarget(cfDist)),
     });
 
-    new HttpsRedirect(this, "Redirect", {
+    new HttpsRedirect(this, 'Redirect', {
       zone,
       recordNames: [wwwDomain],
       targetDomain: primaryDomain,
