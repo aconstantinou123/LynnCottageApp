@@ -4,7 +4,7 @@ const Footer = () => {
     <footer>
       <div className='footer-copyright text-center py-3 mt-5' style={{ color: '4f4f4f', backgroundColor: 'rgba(38, 38, 38)' }}>
         &copy; {year};
-        <a href='http://localhost:3000' style={{ color: 'white' }}>
+        <a href='https://lynncottage.co.uk' style={{ color: 'white' }}>
           {' '}
           lynn-cottage.co.uk
         </a>
