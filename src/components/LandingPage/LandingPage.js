@@ -4,12 +4,14 @@ import Description from '../Description/Description'
 import Gallery from '../Gallery/Gallery'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
+import Accordion from '../Accordion/Accordion'
 
 const LandingPage = () => (
   <>
     <Navbar/>
     <BackgroundImage/>
     <Description/>
+    <Accordion/>
     <Gallery/>
     <Contact/>
     <Footer/>

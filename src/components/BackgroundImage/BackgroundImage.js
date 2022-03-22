@@ -8,7 +8,7 @@ const BackgroundImage = () => (
       height: '100vh',
     }}
   >
-    <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+    <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
       <div className='header-text d-flex justify-content-center text-center'>
         <h1 className='text-white mb-3'>Lynn Cottage</h1>
         <h4 className='text-white mb-3'>
