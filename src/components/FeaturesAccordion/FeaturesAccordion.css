@@ -1,0 +1,13 @@
+.accordion {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion {
+    width: 60%;
+  }
+}
+
+.accordion-icon {
+  padding-right: 10px;
+}
