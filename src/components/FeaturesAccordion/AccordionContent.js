@@ -43,7 +43,7 @@ export const accommodation = <>
       <h4 className='d-flex justify-content-center'>Amenities</h4>
     </div>
     <div className='d-flex space-around'>
-      <div className='mx-auto'>
+      <div className='w-50'>
         <ul>
           <li>
             Hair dryer
@@ -83,7 +83,7 @@ export const accommodation = <>
           </li>
         </ul>
       </div>
-      <div className='mx-auto'>
+      <div className='w-50'>
         <ul>
           <li>
             Smoke & heat alarms
