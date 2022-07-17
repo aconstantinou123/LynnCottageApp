@@ -234,7 +234,7 @@ export const golf = <>
 export const beaches = <>
   <Accordion.Body>
     <h3>Ravensheugh Sands - 4 miles</h3>
-    Part of the John Muir Country Park, Tyninghame Links, otherwise known as Ravensheugh is one of the finest beaches in the south of Scotland. Walking from the car park via one of the many paths which wind their way through the forest, you’ll come out onto the huge sandy unspoilt bay with views of the Bass Rock, the Isle of May and Fife. Great for walking at all times of year and for a picnic in the summer. Pop into Tyninghame Smithy on the way back for a light lunch or great cakes.
+    Part of the John Muir Country Park, Tyninghame Links, otherwise known as Ravensheugh is one of the finest beaches in the south of Scotland. Walking from the car park via one of the many paths which wind their way through the forest, you'll come out onto the huge sandy unspoilt bay with views of the Bass Rock, the Isle of May and Fife. Great for walking at all times of year and for a picnic in the summer. Pop into Tyninghame Smithy on the way back for a light lunch or great cakes.
   </Accordion.Body>
   <Accordion.Body>
     <h3>Bellhaven Bay - 5.4 miles</h3>
@@ -269,15 +269,15 @@ export const walking = <>
   </Accordion.Body>
   <Accordion.Body>
     <a href='https://elcv.org.uk/wp-content/uploads/2020/08/Walks-Around-East-Linton-v2.pdf' target='_blank' rel='noopener noreferrer'>
-      www.elcv.org.uk/wp-content/uploads/2020/08/Walks-Around-East-Linton-v2.pdf
+      www.elcv.org.uk
     </a>
   </Accordion.Body>
   <Accordion.Body>
-    The walk from the village to <b>Traprain Law</b> will take you along the banks of the River Tyne, past Hailes Castle then over farmland to one of the most distinctive landmarks in the county. Once home to the Iron Age Votodini tribe and occupied up to the Roman withdrawal, you can still see remains of dwellings at the top. The largest hoard of Roman silver outside the Roman Empire was discovered here in 1919. If you don’t want to walk all the way from the village there is a car park at the foot of the law.
+    The walk from the village to <b>Traprain Law</b> will take you along the banks of the River Tyne, past Hailes Castle then over farmland to one of the most distinctive landmarks in the county. Once home to the Iron Age Votodini tribe and occupied up to the Roman withdrawal, you can still see remains of dwellings at the top. The largest hoard of Roman silver outside the Roman Empire was discovered here in 1919. If you don't want to walk all the way from the village there is a car park at the foot of the law.
   </Accordion.Body>
   <Accordion.Body>
     <a href='https://elcv.org.uk/wp-content/uploads/2018/02/1P-East-Linton-to-Traprain-Law.pdf' target='_blank' rel='noopener noreferrer'>
-      www.elcv.org.uk/wp-content/uploads/2018/02/1P-East-Linton-to-Traprain-Law.pdf
+      www.elcv.org.uk
     </a>
   </Accordion.Body>
   <Accordion.Body>
@@ -297,7 +297,338 @@ export const walking = <>
     </a>
     <br/>
     <a href='http://www.elcv.org.uk/wp-content/uploads/2018/02/Paths-in-and-Around-the-Lammermuirs.pdf' target='_blank' rel='noopener noreferrer'>
-      elcv.org.uk/wp-content/uploads/2018/02/Paths-in-and-Around-the-Lammermuirs.pdf
+      elcv.org.uk
+    </a>
+  </Accordion.Body>
+</>
+
+export const places = <>
+  <Accordion.Body>
+    Below are some of the best days out in the area (see Walking section also):
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Preston Mill</h3>
+    Just past Prestonkirk on the road out of the village towards Tyninghame, you'll find picturesque Preston Mill. The mill was built around 1599 and is one of the main historical attractions of the area, featuring in recent times in the American hit TV series <b>Outlander</b>.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.nts.org.uk/visit/places/preston-mill' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>East Links Family Park, Dunbar</h3>
+    A day out for all the family, this is an activity park suitable for all ages. Activities include go karts, trampolines, soft ball blast area, multi activity fortress, mini golf and a train safari running through the paddocks of friendly farm animals.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.eastlinks.co.uk' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>North Berwick</h3>
+    With its two beaches, Law, Scottish Seabird Centre, Lodge Grounds and main street with its many independent shops, cafes and restaurants, North Berwick makes for a great day out. It can be rather busy on a sunny day so parking can be a challenge.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.seabird.org' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    The centre also organises wildlife boat trips which are a wonderful opportunity to spot wildlife or visit one of the islands in the Firth of Forth including the Isle of May and The Bass Rock.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.seabird.org/boats' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    A climb up <b>North Berwick Law</b> is a must on a clear day. Park in the car park at the bottom and follow the grassy path to the top.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.undiscoveredscotland.co.uk/northberwick/northberwicklaw/index.html' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <b>The Coastal Communities Museum</b> explores the culture and heritage of the coastal communities in and around North Berwick.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.coastalmuseum.org' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Hailes Castle</h3>
+    Walk along the River Tyne (head down the lane just past the Railway bridge - Distillery Wynd as you are walking out of the village towards Haddington). One of Scotland's oldest remaining stone castles, it dates from the early 1200s and is beautifully set on the bank of the River Tyne. Reputedly, a spot visited by Mary Queen of Scots and her husband to be James Hepburn, it was also the scene of conflict during The Wars of Independence and Oliver Cromwell's. Particularly interesting is the hundreds of years old graffiti. Open all year round at no charge!
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://historicenvironment.scot/visit-a-place/places/hailes-castle' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Tantallon Castle</h3>
+    Set right on the cliff edge overlooking The Bass Rock, Tantallon has one of the most dramatic locations in Scotland. Once one of Scotland's strongest fortresses it has a fiery history from its origins in the 1300s to its destruction by Oliver Cromwell's army in the 17th Century.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.historicenvironment.scot/visit-a-place/places/tantallon-castle' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Foxlake Adventures</h3>
+    On the edge of the John Muir Country Park, this award-winning adventure hub is just over three miles from the cottage and hosts Scotland's first cable wakeboarding park along with the UK's only ropes course constructed over water. In addition to Wakeboarding, you can try Ringos, Segways and Open Water Swimming. There's also a café with an outdoor seating area.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.foxlake.co.uk' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Dunbar Harbour, Castle & Battery</h3>
+    All that remains is the weathered fragmented ruin of what was once one of the mightiest castles in Scotland. You can't access the ruins themselves due the precarious state but the best view is from just below the leisure centre.The much better preserved battery lies at the north-east corner of the Victoria Harbour. This once protected the entrance to the old Dunbar Harbour and now provides a good viewpoint for the town, harbours, and castle. It's a short walk from here to the town's main street with it's shops and cafes.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.undiscoveredscotland.co.uk/dunbar/dunbarcastle/index.html' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>National Museum of Flight, East Fortune</h3>
+    Fantastic for a rainy day. The museum is just four and a half miles from the cottage and one of the best flight museums in the UK with its world-class collection of aircraft, including Concorde.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.nms.ac.uk/national-museum-of-flight' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Dunbar Leisure Centre</h3>
+    With its wave machine and flume this is another great way to spend a rainy day. There are also regular lane swimming sessions during the week. Check the timetable out on the link below:
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.enjoyleisure.com/venues/c4/dunbar_leisure_pool/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Amisfield Walled Garden, Amisfield Park, Haddington</h3>
+    One of the largest walled gardens in Scotland dating from the late 18th Century, this is well worth a visit if you like your gardens. Entry is free and the garden is open all year round except for the Christmas - New Year period.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.amisfield.org.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>NB Distillery, Halflandsbarn, North Berwick</h3>
+    From a small start several years ago, NB is now a multi award winning distillery producing artisan gin, vodka and rum. Their Ginspiration Tour will take you on a tour of the distillery followed by a tasting session.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://nbdistillery.com/pages/visit-nb-distillery' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Aberlady Bay Nature Reserve</h3>
+    Established in 1952, Aberlady Bay was the first local Nature Reserve. This extensive area with its sand, mudflats and salt marsh is home to feeding wildfowl and waders and breeding birds, in addition to the 550 species of plant life which have been identified here.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.undiscoveredscotland.co.uk/aberlady/aberladybay/index.html' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>And last but not least - Edinburgh</h3>
+    The city is within easy reach, a 30-minute drive or a direct bus (2 per hour - great if you want have dinner with a glass or two!!). A day or 2 exploring the city, particularly during the festival is a must.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://edinburgh.org/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+</>
+
+export const eating = <>
+  <Accordion.Body>
+    There's no shortage of great places to eat in East Linton and the surrounding area. Below is a sample of some tried and tested food options:
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>The Crown & Kitchen- East Linton</h3>
+    A great pub with good food based on local ingredients. Classic Scottish dishes with a modern twist. Dine in the bar, in the restaurant at the back or in the garden in summer.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://crownandkitchen.com' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Bostock Bakery - East Linton</h3>
+    The best bread and croissants you'll get this side of the channel. Sourdough bread, bagels and a variety of pastries and cakes. Offering lunchtime treats such as sourdough sandwiches, soup and their famous pork, almond and apple sausage rolls. Open every day but get their early for the best choice.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.bostockbakery.co.uk' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>East Coast Lobsters - Home Delivery</h3>
+    Based in the village, this is a fantastic addition to East Linton's dining options and highly recommended.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.eastcoastlobsters.co.uk/collections/menu' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Sri Lankan Delights - Home Delivery</h3>
+    Vegan takeaway Sri Lankan Curries delivered to your door on Friday, Saturday, or Sunday night.
+  </Accordion.Body>
+  <Accordion.Body>
+    Order by text or email 07494800538 / srilankandelights@tutanota.com
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Wok n Go - East Linton</h3>
+    This quirky Chinese restaurant and takeaway is housed in a double decker bus in the car park at The Mart.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.facebook.com/Wok-N-Go-Noodle-Bar-2384536291788198/' target='_blank' rel='noopener noreferrer'>
+      link to facebook
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Smeaton Tearoom - East Linton</h3>
+    The Victorian tearoom at Smeaton Nursery won 'Best café' in the East Lothian Food and Drink Awards in 2015. The tearoom serves light lunches and a selection of homemade cakes.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.smeatonnurserygardens.co.uk' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>The Linton Steakhouse - East Linton</h3>
+    The Linton Steakhouse offers fresh local food, their menu features locally sourced fruit & vegetables, meat & game, and fish & shellfish.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.thelintonhotel.co.uk/the-steakhouse/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Drift Cafe, Canty Bay, North Berwick</h3>
+    Situated on the clifftops just past Tantallon on the way to North Berwick, the entrance is easy to miss.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.driftalong.co.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Tyninghame Smithy - Tyninghame</h3>
+    A cosy tearoom in the old blacksmiths with a jumble of tables and exposed brick walls. Popular with walkers and cyclists there are more tables out in the courtyard.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='http://facebook.com/TyninghameSmithy' target='_blank' rel='noopener noreferrer'>
+      link to facebook
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Lobster Shack - North Berwick</h3>
+    Open April to September the Lobster Shack is a takeaway stall (with some basic seating outside) set against the harbour wall.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.lobstershack.co.uk' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Rocketeer - North Berwick</h3>
+    The Rocketeer is located in the old coastguard statio, just around the corner in front of the Seabird Centre.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://rocketeerrestaurant.co.uk' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Herringbone - North Berwick</h3>
+    Known for its craft beers, cocktails, and simple bistro style food this busy spot is located on North Berwick High Street.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.theherringbone.co.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Steampunk Café - North Berwick</h3>
+    A speciality coffee roaster just behind the high street, operating as a takeaway hatch from their front door for coffee and cakes.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.steampunkcoffee.co.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Zitto - North Berwick</h3>
+    Italian restaurant and wine bar offering a comprehensive variety of traditional homemade dishes and comfort food.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.zitto.co.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Cucina Amore - North Berwick</h3>
+    A popular and well-reviewed restaurant located on the High Street specialising in Italian cuisine.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='http://www.cucinaamore.co.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>The Creel - Dunbar</h3>
+    This cosy restaurant specialising in locally sourced food has an excellent reputation and is perfect for lunch or a special dinner.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='http://creelrestaurant.co.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>The Rocks - Dunbar</h3>
+    The Rocks is a small hotel with a dramatic coastal outlook. It offers regularly changing menus of delicious, seasonal, locally sourced dishes, specialising in local, freshly-caught seafood, steaks and they serve sirloin beef for their Sunday roast.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.therockshoteldunbar.co.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Falko - Haddington</h3>
+    A small German bakery tucked into the corner of the High Street specialising in premium quality, traditionally made, German Konditorei cakes and gateaux and sourdough breads.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://www.falko.co.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Carlyle House - Haddington</h3>
+    The café is open daily for breakfast, lunch, and afternoon tea and virtually everything on the menu is made in their own kitchen.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='http://carlylehousecafe.com/the-cafe-at-carlyle-house/' target='_blank' rel='noopener noreferrer'>
+      link to website
+    </a>
+  </Accordion.Body>
+  <Accordion.Body>
+    <h3>Waterside Bistro - Haddington</h3>
+    Situated on the banks of the River Tyne next to the historic Nungate Bridge this characterful restaurant, serving lunch and dinner, is a showcase for Scotland's larder.
+  </Accordion.Body>
+  <Accordion.Body>
+    <a href='https://thewatersidebistro.co.uk/' target='_blank' rel='noopener noreferrer'>
+      link to website
     </a>
   </Accordion.Body>
 </>
