@@ -10,11 +10,13 @@ const BackgroundImage = () => (
   >
     <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
       <div className='header-text d-flex justify-content-center text-center'>
-        <h1 className='text-white mb-3'>Lynn Cottage</h1>
-        <h4 className='text-white mb-3'>
-          A hideaway amongst the beauty of East Lothian
+        <div className='header-container'>
+        <h1 className='text-white mb-3' style={{ textShadow: '1px 1px #4f4f4f'}}>Lynn Cottage</h1>
+        <h4 className='text-white mb-3' style={{ textShadow: '1px 1px #4f4f4f'}}>
+         Situated in the beautiful village of East Linton, Lynn Cottage is perfectly placed for exploring this fabulous area of coastal Scotland
         </h4>
-        <a href='#description' className='btn btn-outline-light btn-lg' role='button'>
+        </div>
+        <a href='#description' className='btn btn-outline-light btn-lg' style={{ textShadow: '1px 1px #4f4f4f', boxShadow: '1px 1px #4f4f4f'}} role='button'>
           Learn More
         </a>
       </div>

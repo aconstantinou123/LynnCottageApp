@@ -8,6 +8,7 @@ import {
   walking,
   places,
   eating,
+  shops,
 } from './AccordionContent'
 import './FeaturesAccordion.css';
 
@@ -47,6 +48,10 @@ const FeaturesAccordion = () => {
         <Accordion.Item eventKey='7'>
         <Accordion.Header><i id='description' className='fa-solid fa-utensils fa-2xl accordion-icon'></i>Eating Out & Takeaway</Accordion.Header>
           {eating}
+        </Accordion.Item>
+        <Accordion.Item eventKey='8'>
+        <Accordion.Header><i id='description' className='fa-solid fa-basket-shopping fa-2xl accordion-icon'></i>Shops</Accordion.Header>
+          {shops}
         </Accordion.Item>
       </Accordion>
     </div>
