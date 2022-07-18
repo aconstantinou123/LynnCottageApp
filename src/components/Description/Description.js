@@ -7,7 +7,7 @@ const Description = () => (
         <div className='row d-flex justify-content-center mb-4'>
           <div className='col-md-8'>
             <p className='grey-text pt-5'>
-            Situated in the beautiful village of East Linton, Lynn Cottage is perfectly placed for exploring this fabulous area of coastal Scotland. The 2-bed cottage is 10 minutes’ walk to the village centre and has stunning views from the back garden over Drylaw Hill.
+            Situated in the beautiful village of East Linton, Lynn Cottage is perfectly placed for exploring this fabulous area of coastal Scotland. The 2-bed cottage is 10 minutes' walk to the village centre and has stunning views from the back garden over Drylaw Hill.
             </p>
             <p className='grey-text'>
             Whether you are golfers, walkers, cyclists or looking for family fun you will find many attractions to keep you busy. Officially the sunniest area of Scotland, East Lothian has a lot to offer, from its spectacular coastline with fantastic beaches to historic castles, world-class golf courses and hill country. All within easy reach of Edinburgh with its numerous attractions.
